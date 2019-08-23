@@ -3,7 +3,7 @@ const initialState = {
         {
             id: 1,
             name: "Settings",
-            icon: "settings",
+            icon: "cogs",
             items: [
                 { id: 1, name: "Login", icon: "login" },
                 { id: 2, name: "Account", icon: "account" },
@@ -15,7 +15,7 @@ const initialState = {
         {
             id: 2,
             name: "Components",
-            icon: "view_quilt",
+            icon: "cubes",
             items: [
                 { id: 1, name: "Button", icon: "button" },
                 { id: 2, name: "Bar", icon: "bar" },
@@ -25,7 +25,7 @@ const initialState = {
         {
             id: 3,
             name: "Library",
-            icon: "folder_open",
+            icon: "folder-open",
             items: [
                 { id: 1, name: "A", icon: "light" },
                 { id: 2, name: "AB", icon: "door" },

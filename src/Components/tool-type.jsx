@@ -1,5 +1,6 @@
 import React from 'react';
 import style from 'styled-components';
+import { Icon } from 'react-fa';
 
 const ToolButtonSize = "calc(50px + 5vw)";
 const ToolButton = style.button`
@@ -12,12 +13,6 @@ const ToolButton = style.button`
         background-color: #CCC;
     }
     background-color: #FFFFFF;
-`;
-const ToolIcon = style.div`
-    display:flex;
-    flex:2;
-    align-items: flex-end;
-    justify-content: center;
 `;
 const ToolDescription = style.div`
     display:flex;
@@ -33,7 +28,7 @@ const ToolType = ({ data: { name, icon }, className = "", onClick }) => (
         className={`${className}`}
         onClick={onClick}
     >
-        {<ToolIcon>{icon}</ToolIcon>}
+        {<Icon name={`${icon}`} style={{fontSize: "5em", alignItems: "center", justifyContent: "center", display: "flex", flex:2}}/>}
         {<ToolDescription>{name}</ToolDescription>}
     </ToolButton>);
 

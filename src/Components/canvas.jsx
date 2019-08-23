@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 import { ToolItemPosition } from './tool-item';
 import style from 'styled-components';
 
@@ -16,8 +15,6 @@ const CanvasSection = style.div`
 const Canvas = (props) => {
     const [items, setItems] = useState([]);
     const [newitemId, setNewItemId] = useState(1);
-    const dispatch = useDispatch();
-    const draggedItem = useSelector(state => state.draggedItem);
 
     const dragOverHandler = (e) => {
         e.preventDefault();
